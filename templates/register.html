@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Page</title>
+</head>
+<body>
+{{msg}}
+<br><br>
+<center><h1>Registration Page</h1></center>
+<br><br>
+
+<form action="http://localhost:5000/user/registration/" method="post">
+    Name : <input type="text" name="nm" value="{{user.name}}"><br><br>
+    Address : <input type="text" name="adr" value="{{user.address}}"><br><br>
+    Contact :<input type="text" name="con" value="{{user.contact}}"><br><br>
+    Education : <input type="text" name="edu" value="{{user.education}}"><br><br>
+    Gender : <input type="radio" name="gen" > Male
+                        <input type="radio" name="gen"> Female <br><br>
+    Username :  <input type="text" name="username" value="{{login.username}}"><br><br>
+    Password :  <input type="password" name="password" value="{{login.password}}"><br><br>
+    ConfirmPassword :  <input type="text" name="cpwd" value="{{login.password}}"><br><br>
+    <input type="submit"> | <a href="http://localhost:5000/authentic/user/">login Here</a>
+
+</form>
+</body>
+</html>
