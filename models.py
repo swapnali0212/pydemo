@@ -27,7 +27,8 @@ class Logindetails(db.Model):
     @staticmethod
     def dummy_login():
         Logindetails(username='', password='')
-
+class Vendor(db.Model):
+    pass
 if __name__ == '__main__':
     db.create_all()
 
